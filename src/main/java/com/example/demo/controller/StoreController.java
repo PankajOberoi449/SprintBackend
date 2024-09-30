@@ -23,7 +23,7 @@ public class StoreController {
 	@Autowired
 	private StoreService storeService;
 
-	@GetMapping()
+	@GetMapping("/all")
 	public List<Store> getAllStores() {
 		List<Store> stores = storeService.getAllStores();
 		for(Store s: stores) {

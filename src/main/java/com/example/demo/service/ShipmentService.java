@@ -21,7 +21,9 @@ public class ShipmentService implements IShipmentService {
 	public List<ShipmentDto> getAllShipments() {
 
 		List<Shipment> shipments = shipmentRepository.findAll();
-
+		
+		System.out.println(shipments);
+		
 		return shipments.stream().map(this::convertToDTO).collect(Collectors.toList());
 
 	}

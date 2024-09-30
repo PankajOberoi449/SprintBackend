@@ -23,9 +23,7 @@ public class Shipment {
 	@Id
 
 	  @GeneratedValue(strategy = GenerationType.IDENTITY)
-
 	  @Column(name = "shipment_id")
-
 	  private int shipmentId;
 
 	  @Column(name = "delivery_address", nullable = false, length = 512)
